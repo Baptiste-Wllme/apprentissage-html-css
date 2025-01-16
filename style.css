@@ -9,7 +9,8 @@ body {
 }
 
 a {
-  color: #242424
+  text-decoration: none;
+  color: #242424;
 }
 
 .important {
@@ -41,7 +42,11 @@ h2 {
 header,
 footer {
   background-color: white;
-  padding: 20px 50px;
+  padding: 22px 50px;
+}
+
+header img{
+margin-left: 30px;
 }
 
 .cta {
@@ -49,7 +54,7 @@ footer {
   background: linear-gradient(#8e86b5, #acaeed);
   color: white;
   border-radius: 45px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .englobement {
@@ -83,10 +88,9 @@ section {
   padding: 80px;
 }
 
-
-
 .voir_mon_p {
   margin-top: 20px;
+  
 }
 
 footer,
@@ -98,12 +102,12 @@ nav {
 }
 
 nav a {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .photo {
   background-color: white;
-  padding: 50px;
+  
   
 }
 
@@ -126,6 +130,9 @@ nav a {
   flex-direction: row;
   align-items: center;
   margin: auto;
+  padding-right: 80px;
+  max-width: 1000px;
+  align-items: flex-start;
 }
 
 footer {
@@ -179,10 +186,11 @@ footer {
 
 .intro p {
   margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 .photo-conteneur img {
-  width: 30%;
+  width: 24%;
   margin: 0;
 }
 
@@ -234,7 +242,85 @@ h2 {
   margin-bottom: 80px;
 }
 
-h1,
-h2 {
-  text-align: center;
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  
 }
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 15px;
+  
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: calc(50% - 10px);
+}
+
+.form-contact {
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+}
+
+label {
+  margin-bottom: 10px;
+  color: white;
+}
+
+input[type='submit'] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.contact h2 {
+  color: #a5b4fc;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 996px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header,
+  footer {
+    padding: 20px 20px;
+  }
+
+  header nav img {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 50px 20px 50px 20px;
+  }
+
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+main h1 {
+  padding-bottom: 20px;
+}
+
